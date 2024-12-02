@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package albert;
+
+service AlbertService {
+  rpc FindOne (AlbertById) returns (Albert) {}
+}
+
+message AlbertById {
+  int32 id = 1;
+}
+
+message Albert {
+  int32 id = 1;
+  string name = 2;
+}

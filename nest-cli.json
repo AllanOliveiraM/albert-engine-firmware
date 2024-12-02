@@ -12,8 +12,13 @@
     "tsConfigPath": "./tsconfig.build.json",
     "webpack": false,
     "deleteOutDir": true,
-    "assets": [],
-    "watchAssets": false,
+    "assets": [
+      {
+        "include": "proto/albert.proto",
+        "outDir": "dist",
+        "watchAssets": true
+      }
+    ],
     "plugins": [],
     "builder": "swc",
     "typeCheck": true
